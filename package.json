@@ -1,0 +1,15 @@
+{
+  "name": "jic",
+  "version": "0.0.1",
+  "description": "\"Ridiculously simple Dependency Injection Container for NodeJS\"",
+  "main": "index.js",
+  "repository": "git@github.com:Einenlum/jic.git",
+  "author": "Einenlum <yann.rabiller@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "nop": "^1.0.0"
+  },
+  "scripts": {
+    "test": "faucet tests/**/*.test.js"
+  }
+}
