@@ -60,6 +60,10 @@ const container = (function() {
     return registry[id].target;
   };
 
+  const trimLeadingSlash = function(path) {
+    return path.replace(/\/+$/, '');
+  };
+
   return {
     register: function(arr, rootDir) {
       if (booted) {
@@ -67,7 +71,8 @@ const container = (function() {
           'The container is already booted. You cannot register services anymore'
         );
       }
-      rootDir = rootDir.replace(/\/+$/, '');
+
+      rootDir = trimLeadingSlash(rootDir);
       for (let { id, path, dependencies = [] } of arr) {
         registry = {
           ...registry,
