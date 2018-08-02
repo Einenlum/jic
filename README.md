@@ -29,7 +29,7 @@ To get a service: `container.get(idOfTheService);`
 Example:
 
 ```js
-const container = require('jic');
+const container = require('@einenlum/jic');
 
 container.register([
   {id: 'request', path: 'request'},
