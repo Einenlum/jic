@@ -1,6 +1,6 @@
 {
   "name": "@einenlum/jic",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Ridiculously simple Dependency Injection Container for NodeJS",
   "main": "index.js",
   "repository": "git@github.com:Einenlum/jic.git",
