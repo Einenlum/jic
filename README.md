@@ -35,8 +35,8 @@ container.register([
   {id: 'request', path: 'request'},
   {id: 'curryWurst': path: './curryWurst', dependencies: ['sausage', 'ketchup', 'curry']},
   {id: 'ketchup', path: './ketchup'},
-  {id: 'curry': path: './curry', dependencies: ['request']},
-  {id: 'sausage: 'path: './sausage'}
+  {id: 'curry', path: './curry', dependencies: ['request']},
+  {id: 'sausage', path: './sausage'}
 ], __dirname) // the path that will be used as root for the internal services
 
 // To fetch the service you want (will always return a singleton):
