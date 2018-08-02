@@ -38,3 +38,25 @@ test('it returns a singleton', function(assert) {
   assert.equals(container.get('curryWurst'), container.get('curryWurst'));
   assert.end();
 });
+
+test('it throws an error if trying to register after booting', function(assert) {
+  try {
+    container.register([{ id: 'some-id', path: 'some-path' }], __dirname);
+  } catch (error) {
+    assert.end();
+    return;
+  }
+
+  assert.fail();
+});
+
+test('it throws an error if trying to register without root directory', function(assert) {
+  const newContainer = require('../index');
+  try {
+    newContainer.register([{ id: 'some-id', path: 'some-path' }]);
+  } catch (error) {
+    assert.end();
+    return;
+  }
+  assert.fail();
+});

@@ -41,6 +41,12 @@ const container = (function() {
         );
       }
 
+      if (!rootDir) {
+        throw Error(
+          'rootDir for internal services must be supplied as second argument'
+        );
+      }
+
       rootDir = trimLeadingSlash(rootDir);
       for (let { id, path, dependencies = [] } of arr) {
         registry = {
