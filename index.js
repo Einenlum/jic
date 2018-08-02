@@ -1,34 +1,3 @@
-/**
- * Extremely simple Dependency Injection Container that loads
- * services only on demand.
- *
- * Use:
- *
- * const container = require('./utils/container')();
- * container.register([
- *   {id: 'some-external-module', 'path-to-module'},
- *   {id: 'ketchup', path: './ketchup'},
- *   {id: 'curry': path: './curry'},
- *   {id: 'sausage: 'path: './sausage'},
- *   {id: 'curryWurst': path: './curryWurst', dependencies: ['ketchup', 'curry']}
- * ], __dirname) // the path that will be used as root for the internal services
- *
- * To fetch the service you want (returns a singleton):
- * container.get('curryWurst');
- * container.get('some-external-module');
- *
- * All internal services must be written as factory functions with
- * dependencies as parameters.
- *
- * Ex:
- *
- * module.exports = function(iconv, request, someService) {
- *   return {
- *     ...
- *   }
- * };
- */
-
 const container = (function() {
   let registry = {};
   let booted = false;
