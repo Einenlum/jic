@@ -16,6 +16,10 @@ No Typescript, no automatic loading. Just a tiny tool to help you build your com
 
 Node version >= 8.
 
+## Install
+
+`npm add --save jic` or `yarn add jic`
+
 ## Usage
 
 To register services and dependencies: `container.register(arrayOfServices, rootDirectory);`
