@@ -11,6 +11,9 @@
     "nop": "^1.0.0",
     "tape": "^4.9.1"
   },
+  "engines": {
+    "node": ">=8"
+  },
   "scripts": {
     "test": "faucet tests/*.test.js"
   }

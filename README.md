@@ -12,6 +12,10 @@ This is a **very simple** DIC you can use for small projects, if you don't need 
 
 No Typescript, no automatic loading. Just a tiny tool to help you build your composition root.
 
+## Requirements
+
+Node version >= 8.
+
 ## Usage
 
 To register services and dependencies: `container.register(arrayOfServices, rootDirectory);`
