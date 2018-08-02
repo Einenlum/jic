@@ -18,7 +18,7 @@ Node version >= 8.
 
 ## Install
 
-`npm add --save jic` or `yarn add jic`
+`npm add --save @einenlum/jic` or `yarn add @einenlum/jic`
 
 ## Usage
 

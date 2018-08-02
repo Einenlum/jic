@@ -1,5 +1,5 @@
 {
-  "name": "jic",
+  "name": "@einenlum/jic",
   "version": "0.0.1",
   "description": "Ridiculously simple Dependency Injection Container for NodeJS",
   "main": "index.js",
