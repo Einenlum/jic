@@ -12,6 +12,6 @@
     "tape": "^4.9.1"
   },
   "scripts": {
-    "test": "faucet tests/**/*.test.js"
+    "test": "faucet tests/*.test.js"
   }
 }
