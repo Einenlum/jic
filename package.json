@@ -6,6 +6,16 @@
   "repository": "git@github.com:Einenlum/jic.git",
   "author": "Einenlum <yann.rabiller@gmail.com>",
   "license": "MIT",
+  "keywords": [
+    "dic",
+    "jic",
+    "dependency",
+    "injection",
+    "container",
+    "inversion of control",
+    "test",
+    "testing"
+  ],
   "devDependencies": {
     "faucet": "^0.0.1",
     "nop": "^1.0.0",
